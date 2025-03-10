@@ -19,7 +19,7 @@ app.use("/api/products", productRoutes);
 
 AppDataSource.initialize()
   .then(() => {
-    console.log("Connected to Database");
+    console.log("Connected to Database!!!");
     app.listen(PORT, () => {
               console.log(`Server running on http://localhost:${PORT}`);
       });
