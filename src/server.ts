@@ -1,9 +1,11 @@
 //  import app from "./app";
 import express from "express";
+import * as dotenv from "dotenv";
  import cors from "cors";
  import { AppDataSource } from "./config/database";
  import productRoutes from "./routes/productRoutes";
-
+ dotenv.config();
+ 
 const PORT = process.env.PORT || 5000;
 const app = express();
 
